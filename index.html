@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-CV Kelompok</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="wave-container">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+        <use href="#gentle-wave" x="48" y="0" class="wave1" />
+        <use href="#gentle-wave" x="48" y="3" class="wave2" />
+        <use href="#gentle-wave" x="48" y="5" class="wave3" />
+      </g>
+    </svg>
+  </div>
+
+  <div class="app">
+    <header class="app-header">
+      <button id="theme-toggle" class="theme-btn" title="Ubah Tema">🌙</button>
+      <h1>E-CV Kelompok</h1>
+      <p>Silakan pilih tab di bawah untuk melihat profil dan mengunduh berkas.</p>
+    </header>
+    
+    <nav class="tabs" role="tablist" id="main-tabs"></nav>
+    
+    <main id="card-container" class="card-container" role="tabpanel">
+      <p class="hint">Memuat data...</p>
+    </main>
+  </div>
+  <script src="/js/main.js"></script>
+</body>
+</html>
